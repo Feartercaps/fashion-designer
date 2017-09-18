@@ -1,0 +1,416 @@
+*{
+  font-family:"Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive,sans-serif,;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+/* .........................................公用......................... */
+
+@font-face {
+  font-family: 'iconfont';  /* project id 416353 */
+  src: url('font/iconfont.eot');
+  src: url('//at.alicdn.com/t/font_416353_38st2wfpk2owdn29.eot?#iefix') format('embedded-opentype'),
+  url('font/iconfont.woff') format('woff'),
+  url('font/iconfont.ttf') format('truetype'),
+  url('font/iconfont.svg#iconfont') format('svg');
+}
+#services .title p,#header .title b,#about .title p,#chapter .title p,#contact .title p {
+  font-style: italic;
+}
+#body  p{
+  color: #444;
+}
+#header {
+  background: url(img/team.jpg);
+}
+#team {
+  background-color: #f8f6f5;
+  padding: 150px 0;
+}
+#contact {
+  padding: 120px 0;
+  background: url(img/contact.jpg);
+}
+#contact .title p,#contact .title h1 {
+  color: #fff
+}
+
+.title {
+  text-align: center;
+}
+.title>p {
+  margin-top: 20px;
+  margin-bottom: 75px;
+}
+.pic .title p,.par h4,.par p,.lable {
+  margin-top: 6px;
+}
+/* .........................................header......................... */
+#header {
+  background-repeat: none;
+  background-size: cover;
+  background-position: center center;
+  padding-bottom: 200px;
+  text-align: center;
+  padding-top: 30px;
+  margin-bottom: 150px;
+}
+#header .title {
+  margin-top: 230px;
+}
+#header .title b {
+  font-family: "Droid Serif";
+  font-size: 40px;
+  line-height: 40px;
+  color: #fff;
+}
+#header .title p {
+  font-family: Montserrat;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 75px;
+  line-height: 75px;
+  margin-bottom: 50px;
+  color: #fff;
+}
+#header .nav .left {
+  color: #fff;
+  cursor: pointer; 
+}
+#header .nav .right a,#require {
+  color: #fff;
+}
+#require {
+  font-size: 18px;
+  display: inline-block;
+  padding: 13px 25px ;
+  border-radius: 8px;
+  border: 1px solid #fff;
+}
+#require p{
+  color: #fff;
+}
+#require:hover {
+  background:rgba(255,255,255,.3);
+  color: #fff;
+}
+
+.nav {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+}
+.nav .left {
+  font-size: 2em;
+  line-height: 20px;
+  font-weight: 700;
+  margin-left: 30px;
+}
+.nav .right {
+  list-style: none;
+  text-transform: uppercase;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+  margin-right: 190px;
+}
+.nav .right li {
+  margin: 0 10px;
+}
+/* .........................................services......................... */
+#services {
+  padding: 150px 0;
+}
+.mode {
+  font-family: iconfont;
+}
+.mode span {
+  font-size: 6em;
+  display: block;
+  color: #bd9685;
+}
+#services .mode span {
+ margin-bottom: 30px;
+}
+.mode {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.shopping,.pc,.iphone {
+  width: 350px;
+  margin: auto 20px;
+}
+/* ..........................................about........................ */
+#about {
+  padding: 150px 0 200px 0;  
+}   
+.timeline {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.timeline li {
+  list-style: none;
+  text-align: center;
+  position: relative;
+  padding-bottom: 100px;
+}
+.timeline img {
+  border: 6px solid #ddd;
+  height: 156px;
+  width: 156px;
+  border-radius: 50%;
+}
+.content {
+  width: 400px;
+  position: absolute;
+  right: 50%;
+  top: 0;
+  margin-right: 100px;
+  text-align: right;
+}
+.timeline>li:nth-child(even)>.content {
+  left: 50%;
+  text-align: left;
+  margin-left: 100px;
+}
+#about .timeline>li::after{ 
+  content: '';
+  display: block;
+  border: 2px solid #f3f3f3;
+  position: absolute;
+  left: 50%;
+  height: 100%;
+  top: 0;
+  overflow: hidden;
+  z-index: -1;
+}
+#about ul .end h4 {
+  font-size: 1.5em;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: 33px;
+  left: 33px;
+  text-align: center;
+}
+.timeline .end {
+  border: 6px solid #f1f1f1;
+  position: absolute;
+  width: 165px;
+  height: 165px;
+  border-radius: 50%;
+  background-color: #f7f7f7;
+  left: 50%;
+  margin-left: -89px;  
+  background: linear-gradient(to bottom right, #f1f1f1 , #919EF2);
+}
+
+/* ...........................................chapter....................... */
+#chapter ul,#team ul {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-wrap: wrap;
+}
+#chapter {
+  font-family: iconfont;
+  padding: 150px 0;
+  background-color: #f8f6f5;
+}
+.pic,.par {
+  width: 350px;
+  height: 330px;
+  margin: 0 auto;
+  position: relative;
+  list-style: none;
+}
+.pic a {
+    position: relative;
+    width: 350px;
+    height: 260px;
+    display: inline-block;
+    text-decoration: none;
+}
+.pic img {
+  width: 100%;  
+  height: 100%; 
+}
+.cover {
+    background: #ce6b6a;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .4s;
+    opacity: 0;
+    width: 350px;
+    height: 260px;
+}
+.cover>span {
+    font-family: 'iconfont';
+    position:absolute;
+    left:43%;
+    top: 43%;
+    font-size:50px;
+    line-height:30px;
+    color: #fff;
+}
+.cover:hover{
+    opacity:.5;
+}
+.pic .title {
+  padding-top: 10px;
+  height: 68px;
+  position: relative;
+  background-color: #f9f9f9;
+}
+/* .........................................team......................... */
+.par {
+  font-family: iconfont;
+  width: 360;
+  height: 360;
+  text-align: center;
+}
+.par img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid #f1f1f1;
+}
+.par a {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  font-size: 30px;
+  margin: 0 15px;
+  color: #000;
+}
+#team .end-word p {
+  text-align: center;
+  margin: 50px 0;
+}
+/* .........................................广告......................... */
+#ad {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 50px 0;
+}
+.ad img {
+  width: 250px;
+}
+/* ........................................contact.......................... */
+ .recommend {
+  margin: 0 auto;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#contact .title p {
+  margin-bottom: 50px;
+}
+.form-control {
+    border: 2px solid #f1f1f1   ;
+  font-size: 15px;
+  border-radius: 4px;
+  padding: 20px;
+  min-width: 515px;
+  margin: 20px;
+}
+#contact .clearfix {
+  content: ''; 
+  display: block;
+  clear: both;
+}
+#contact .btn {
+  border: none;
+  color: #fff;
+  background-color: #ed7671;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 20px 30px;
+  margin: 30px 0;
+}
+.send {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+}
+#contact .btn:hover{
+  background-color: #cb7d7c;
+}
+/* .......................................footer........................... */
+#footer {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 15px;
+  padding: 15px 0;
+}
+#footer,#back {
+  font-family: iconfont;
+}
+#footer .foot span {
+  font-size: 35px;
+  margin: 0 10px;
+}
+#footer .foot a {
+  color: #000;
+}
+/* .......................................回顶部............................ */
+
+.back {
+  position: fixed;
+  bottom: 30px;
+  right: 10px;
+  font-size: 50px;
+  z-index: 100;
+}
+.back span {
+  color: #cb7d7b;
+  opacity: .5;
+}
+
+/* .........................cative.hover.visited.link...................................... */
+#header .nav .right a:hover {
+  color: #bb9e96;
+}
+
+#team .lable a:hover {
+  color: #cb7d7c;
+}
+#footer .foot span:hover {
+  color: #cb7d7c;
+  cursor: pointer; 
+}
+#footer .foot a:hover {
+  color: #cb7d7c;
+}
+
